@@ -1,0 +1,10 @@
+C:\Users\korisnik\source\repos\zavrsniRad\zavrsniRad\bin\Debug\zavrsniRad.exe.config
+C:\Users\korisnik\source\repos\zavrsniRad\zavrsniRad\bin\Debug\zavrsniRad.exe
+C:\Users\korisnik\source\repos\zavrsniRad\zavrsniRad\bin\Debug\zavrsniRad.pdb
+C:\Users\korisnik\source\repos\zavrsniRad\zavrsniRad\obj\Debug\zavrsniRad.csproj.AssemblyReference.cache
+C:\Users\korisnik\source\repos\zavrsniRad\zavrsniRad\obj\Debug\zavrsniRad.frmLogin.resources
+C:\Users\korisnik\source\repos\zavrsniRad\zavrsniRad\obj\Debug\zavrsniRad.Properties.Resources.resources
+C:\Users\korisnik\source\repos\zavrsniRad\zavrsniRad\obj\Debug\zavrsniRad.csproj.GenerateResource.cache
+C:\Users\korisnik\source\repos\zavrsniRad\zavrsniRad\obj\Debug\zavrsniRad.csproj.CoreCompileInputs.cache
+C:\Users\korisnik\source\repos\zavrsniRad\zavrsniRad\obj\Debug\zavrsniRad.exe
+C:\Users\korisnik\source\repos\zavrsniRad\zavrsniRad\obj\Debug\zavrsniRad.pdb
