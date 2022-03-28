@@ -16,5 +16,11 @@ namespace zavrsniRad
         {
             InitializeComponent();
         }
+
+        private void btnPrijava_Click(object sender, EventArgs e)
+        {
+            FormProdaja forma = new FormProdaja();
+            forma.Show();
+        }
     }
 }
