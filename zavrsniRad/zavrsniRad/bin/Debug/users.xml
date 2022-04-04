@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<users>
+	<user>
+		<username>toni</username>
+		<password>toni123</password>
+		<name>Antonio Ereiz</name>
+		<oib>83628401283</oib>
+	</user>
+	<user>
+		<username>deni</username>
+		<password>deni123</password>
+		<name>Deni Mendica</name>
+		<oib>62893829355</oib>
+	</user>
+</users>

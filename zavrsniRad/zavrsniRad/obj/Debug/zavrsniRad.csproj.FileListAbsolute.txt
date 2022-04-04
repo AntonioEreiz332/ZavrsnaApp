@@ -9,3 +9,4 @@ C:\Users\korisnik\source\repos\zavrsniRad\zavrsniRad\obj\Debug\zavrsniRad.csproj
 C:\Users\korisnik\source\repos\zavrsniRad\zavrsniRad\obj\Debug\zavrsniRad.exe
 C:\Users\korisnik\source\repos\zavrsniRad\zavrsniRad\obj\Debug\zavrsniRad.pdb
 C:\Users\korisnik\source\repos\zavrsniRad\zavrsniRad\obj\Debug\zavrsniRad.FormProdaja.resources
+C:\Users\korisnik\source\repos\zavrsniRad\zavrsniRad\obj\Debug\zavrsniRad.FormStanje.resources

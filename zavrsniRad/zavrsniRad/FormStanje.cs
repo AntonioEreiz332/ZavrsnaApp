@@ -10,18 +10,18 @@ using System.Windows.Forms;
 
 namespace zavrsniRad
 {
-    public partial class FormProdaja : Form
+    public partial class FormStanje : Form
     {
-        public FormProdaja()
+        public FormStanje()
         {
             InitializeComponent();
         }
 
-        private void btnStanjeKase_Click(object sender, EventArgs e)
+        private void btnZatvori_Click(object sender, EventArgs e)
         {
-            FormStanje stanje = new FormStanje();
-            stanje.Show();
-            this.Hide();
+            FormProdaja prodaja = new FormProdaja();
+            this.Close();
+            prodaja.Show();
         }
     }
 }

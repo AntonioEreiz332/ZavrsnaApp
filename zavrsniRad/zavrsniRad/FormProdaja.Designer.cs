@@ -32,22 +32,23 @@ namespace zavrsniRad
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProdaja));
             this.lblNaslov2 = new System.Windows.Forms.Label();
             this.lblProdajaKar = new System.Windows.Forms.Label();
-            this.btnOdrasli = new System.Windows.Forms.Button();
             this.lblOdrasli = new System.Windows.Forms.Label();
             this.btnOdrasli1Manje = new System.Windows.Forms.Button();
             this.btnOdrasli1Vise = new System.Windows.Forms.Button();
             this.txtBoxKolOdrasli = new System.Windows.Forms.TextBox();
-            this.btnDjeca = new System.Windows.Forms.Button();
             this.lblDjeca = new System.Windows.Forms.Label();
             this.btnDjeca1Manje = new System.Windows.Forms.Button();
             this.textBoxKolDjeca = new System.Windows.Forms.TextBox();
             this.btnDjeca1Vise = new System.Windows.Forms.Button();
-            this.btnMedustanica = new System.Windows.Forms.Button();
             this.lblMedustanica = new System.Windows.Forms.Label();
             this.btnMedustanica1Manje = new System.Windows.Forms.Button();
             this.txtBoxKolMedustanica = new System.Windows.Forms.TextBox();
             this.btnMedustanica1Vise = new System.Windows.Forms.Button();
             this.btnIzradiRacun = new System.Windows.Forms.Button();
+            this.btnStanjeKase = new System.Windows.Forms.Button();
+            this.btnMedustanica = new System.Windows.Forms.Button();
+            this.btnDjeca = new System.Windows.Forms.Button();
+            this.btnOdrasli = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblNaslov2
@@ -70,17 +71,6 @@ namespace zavrsniRad
             this.lblProdajaKar.Size = new System.Drawing.Size(317, 59);
             this.lblProdajaKar.TabIndex = 2;
             this.lblProdajaKar.Text = "Prodaja karata";
-            // 
-            // btnOdrasli
-            // 
-            this.btnOdrasli.BackgroundImage = global::zavrsniRad.Properties.Resources.Untitled__1_;
-            this.btnOdrasli.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnOdrasli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOdrasli.Location = new System.Drawing.Point(65, 189);
-            this.btnOdrasli.Name = "btnOdrasli";
-            this.btnOdrasli.Size = new System.Drawing.Size(166, 191);
-            this.btnOdrasli.TabIndex = 3;
-            this.btnOdrasli.UseVisualStyleBackColor = true;
             // 
             // lblOdrasli
             // 
@@ -126,17 +116,6 @@ namespace zavrsniRad
             this.txtBoxKolOdrasli.Size = new System.Drawing.Size(49, 47);
             this.txtBoxKolOdrasli.TabIndex = 7;
             // 
-            // btnDjeca
-            // 
-            this.btnDjeca.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDjeca.BackgroundImage")));
-            this.btnDjeca.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnDjeca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDjeca.Location = new System.Drawing.Point(481, 189);
-            this.btnDjeca.Name = "btnDjeca";
-            this.btnDjeca.Size = new System.Drawing.Size(166, 191);
-            this.btnDjeca.TabIndex = 8;
-            this.btnDjeca.UseVisualStyleBackColor = true;
-            // 
             // lblDjeca
             // 
             this.lblDjeca.AutoSize = true;
@@ -180,17 +159,6 @@ namespace zavrsniRad
             this.btnDjeca1Vise.TabIndex = 12;
             this.btnDjeca1Vise.Text = "+";
             this.btnDjeca1Vise.UseVisualStyleBackColor = false;
-            // 
-            // btnMedustanica
-            // 
-            this.btnMedustanica.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMedustanica.BackgroundImage")));
-            this.btnMedustanica.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnMedustanica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMedustanica.Location = new System.Drawing.Point(65, 460);
-            this.btnMedustanica.Name = "btnMedustanica";
-            this.btnMedustanica.Size = new System.Drawing.Size(166, 191);
-            this.btnMedustanica.TabIndex = 13;
-            this.btnMedustanica.UseVisualStyleBackColor = true;
             // 
             // lblMedustanica
             // 
@@ -250,12 +218,61 @@ namespace zavrsniRad
             this.btnIzradiRacun.Text = "Izradi račun";
             this.btnIzradiRacun.UseVisualStyleBackColor = false;
             // 
+            // btnStanjeKase
+            // 
+            this.btnStanjeKase.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(204)))), ((int)(((byte)(246)))));
+            this.btnStanjeKase.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnStanjeKase.FlatAppearance.BorderSize = 2;
+            this.btnStanjeKase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStanjeKase.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStanjeKase.Location = new System.Drawing.Point(600, 460);
+            this.btnStanjeKase.Name = "btnStanjeKase";
+            this.btnStanjeKase.Size = new System.Drawing.Size(200, 50);
+            this.btnStanjeKase.TabIndex = 19;
+            this.btnStanjeKase.Text = "Stanje kase";
+            this.btnStanjeKase.UseVisualStyleBackColor = false;
+            this.btnStanjeKase.Click += new System.EventHandler(this.btnStanjeKase_Click);
+            // 
+            // btnMedustanica
+            // 
+            this.btnMedustanica.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMedustanica.BackgroundImage")));
+            this.btnMedustanica.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnMedustanica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMedustanica.Location = new System.Drawing.Point(65, 460);
+            this.btnMedustanica.Name = "btnMedustanica";
+            this.btnMedustanica.Size = new System.Drawing.Size(166, 191);
+            this.btnMedustanica.TabIndex = 13;
+            this.btnMedustanica.UseVisualStyleBackColor = true;
+            // 
+            // btnDjeca
+            // 
+            this.btnDjeca.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDjeca.BackgroundImage")));
+            this.btnDjeca.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnDjeca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDjeca.Location = new System.Drawing.Point(481, 189);
+            this.btnDjeca.Name = "btnDjeca";
+            this.btnDjeca.Size = new System.Drawing.Size(166, 191);
+            this.btnDjeca.TabIndex = 8;
+            this.btnDjeca.UseVisualStyleBackColor = true;
+            // 
+            // btnOdrasli
+            // 
+            this.btnOdrasli.BackgroundImage = global::zavrsniRad.Properties.Resources.Untitled__1_;
+            this.btnOdrasli.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnOdrasli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOdrasli.Location = new System.Drawing.Point(65, 189);
+            this.btnOdrasli.Name = "btnOdrasli";
+            this.btnOdrasli.Size = new System.Drawing.Size(166, 191);
+            this.btnOdrasli.TabIndex = 3;
+            this.btnOdrasli.UseVisualStyleBackColor = true;
+            // 
             // FormProdaja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(222)))), ((int)(((byte)(103)))));
             this.ClientSize = new System.Drawing.Size(900, 697);
+            this.Controls.Add(this.btnStanjeKase);
             this.Controls.Add(this.btnIzradiRacun);
             this.Controls.Add(this.btnMedustanica1Vise);
             this.Controls.Add(this.txtBoxKolMedustanica);
@@ -301,5 +318,6 @@ namespace zavrsniRad
         private System.Windows.Forms.TextBox txtBoxKolMedustanica;
         private System.Windows.Forms.Button btnMedustanica1Vise;
         private System.Windows.Forms.Button btnIzradiRacun;
+        private System.Windows.Forms.Button btnStanjeKase;
     }
 }
