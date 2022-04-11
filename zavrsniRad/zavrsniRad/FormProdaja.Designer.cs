@@ -49,6 +49,8 @@ namespace zavrsniRad
             this.btnMedustanica = new System.Windows.Forms.Button();
             this.btnDjeca = new System.Windows.Forms.Button();
             this.btnOdrasli = new System.Windows.Forms.Button();
+            this.lblDobardan = new System.Windows.Forms.Label();
+            this.btnOdjava = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblNaslov2
@@ -266,12 +268,38 @@ namespace zavrsniRad
             this.btnOdrasli.TabIndex = 3;
             this.btnOdrasli.UseVisualStyleBackColor = true;
             // 
+            // lblDobardan
+            // 
+            this.lblDobardan.AutoSize = true;
+            this.lblDobardan.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblDobardan.Location = new System.Drawing.Point(12, 87);
+            this.lblDobardan.Name = "lblDobardan";
+            this.lblDobardan.Size = new System.Drawing.Size(96, 23);
+            this.lblDobardan.TabIndex = 20;
+            this.lblDobardan.Text = "Dobar dan,";
+            // 
+            // btnOdjava
+            // 
+            this.btnOdjava.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(204)))), ((int)(((byte)(246)))));
+            this.btnOdjava.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnOdjava.FlatAppearance.BorderSize = 2;
+            this.btnOdjava.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOdjava.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOdjava.Location = new System.Drawing.Point(778, 87);
+            this.btnOdjava.Name = "btnOdjava";
+            this.btnOdjava.Size = new System.Drawing.Size(110, 50);
+            this.btnOdjava.TabIndex = 21;
+            this.btnOdjava.Text = "Odjava";
+            this.btnOdjava.UseVisualStyleBackColor = false;
+            // 
             // FormProdaja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(222)))), ((int)(((byte)(103)))));
             this.ClientSize = new System.Drawing.Size(900, 697);
+            this.Controls.Add(this.btnOdjava);
+            this.Controls.Add(this.lblDobardan);
             this.Controls.Add(this.btnStanjeKase);
             this.Controls.Add(this.btnIzradiRacun);
             this.Controls.Add(this.btnMedustanica1Vise);
@@ -293,6 +321,7 @@ namespace zavrsniRad
             this.Controls.Add(this.lblNaslov2);
             this.Name = "FormProdaja";
             this.Text = "Prodaja karata";
+            this.Load += new System.EventHandler(this.FormProdaja_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -319,5 +348,7 @@ namespace zavrsniRad
         private System.Windows.Forms.Button btnMedustanica1Vise;
         private System.Windows.Forms.Button btnIzradiRacun;
         private System.Windows.Forms.Button btnStanjeKase;
+        private System.Windows.Forms.Label lblDobardan;
+        private System.Windows.Forms.Button btnOdjava;
     }
 }
