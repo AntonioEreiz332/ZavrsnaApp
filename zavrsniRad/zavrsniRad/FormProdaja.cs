@@ -37,7 +37,7 @@ namespace zavrsniRad
             if (e.CloseReason == CloseReason.WindowsShutDown) return;
 
             // Confirm user wants to close
-            switch (MessageBox.Show(this, "Are you sure you want to close?", "Closing", MessageBoxButtons.YesNo))
+            switch (MessageBox.Show(this, "Da li ste sigurni da želite zatvoriti prozor?", "Zatvaranje", MessageBoxButtons.YesNo))
             {
                 case DialogResult.No:
                     e.Cancel = true;
@@ -45,6 +45,15 @@ namespace zavrsniRad
                 default:
                     break;
             }
+
+        }
+        
+
+        private void btnOdjava_Click(object sender, EventArgs e)
+        {
+            frmLogin login = new frmLogin();
+            login.Show();
+            this.Close();
 
         }
     }
